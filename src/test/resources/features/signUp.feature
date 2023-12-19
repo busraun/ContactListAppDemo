@@ -1,4 +1,3 @@
-@wip
 Feature: Sign up
 
   Background:

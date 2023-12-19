@@ -35,7 +35,7 @@ public class AddUserPage {
     WebElement passwordBox;
 
     @FindBy(id = "submit")
-    WebElement submitButton;
+    public WebElement submitButton;
 
 
 
