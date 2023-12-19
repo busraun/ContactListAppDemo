@@ -5,8 +5,11 @@ Feature: Sign up
     Given user navigates base page
 
 
-  Scenario:
+  Scenario Outline:
     When click sign up button
     And view add user page
-    And fill the mandatory blanks
-    #Then see the Contact List header
+    And fill the mandatory blanks "<firstName>" "<lastName>" "<email>" "<password>"
+    Then see the Contact List header
+    Examples:
+      | firstName | lastName | email                 | password   |
+      | Hans      | Müller   | hansmueller@gmail.com | hansmuller |
