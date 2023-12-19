@@ -1,7 +1,6 @@
 package pages;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,10 +10,12 @@ import utilities.Driver;
 
 public class AddUserPage {
 
+    WebDriver driver = Driver.getDriver();
+
     public AddUserPage() {
         PageFactory.initElements(driver,this);
     }
-    WebDriver driver = Driver.getDriver();
+
 
 
     @FindBy (xpath = "//h1[text()='Add User']")
@@ -33,6 +34,9 @@ public class AddUserPage {
     @FindBy(id="password")
     WebElement passwordBox;
 
+    @FindBy(id = "submit")
+    WebElement submitButton;
+
 
 
     public void verifyAddUserHeader() {
@@ -40,5 +44,25 @@ public class AddUserPage {
         String actualAddUserHeader=addUserHeader.getText();
         Assert.assertEquals(expectedAddUserHeader,actualAddUserHeader);
         System.out.println("Add User Header is visible");
+    }
+
+    public void typeFirstName(String firstNameText){
+        firstNameBox.sendKeys(firstNameText);
+    }
+
+    public void typeLastName(String lastNameText) {
+        lastNameBox.sendKeys(lastNameText);
+    }
+
+    public void typeEmail(String emailText) {
+        emailBox.sendKeys(emailText);
+    }
+
+    public void typePassword(String passwordText) {
+        passwordBox.sendKeys(passwordText);
+    }
+
+    public void clickSubmit() {
+        submitButton.click();
     }
 }

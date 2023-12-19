@@ -19,7 +19,7 @@ public class LoginPage {
         System.out.println("Website is launching");
         driver.get("https://thinking-tester-contact-list.herokuapp.com/");
         System.out.println("Website is launching 2 ");
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 
     }
 
@@ -27,7 +27,7 @@ public class LoginPage {
     public void clickSignUpButton()  {
         By signUpButton = By.id("signup");
         WebElement signupButton=driver.findElement(signUpButton);
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         signupButton.click();
         System.out.println("signupButton is clicked ");
     }
