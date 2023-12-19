@@ -19,6 +19,9 @@ public class ContactListPage {
     @FindBy (xpath = "//h1[text()='Contact List']")
     WebElement contactListHeader;
 
+    @FindBy(id ="add-contact")
+    WebElement addContactButton;
+
     @SneakyThrows
     public void verifyContactListHeader() {
         String expectedContactListHeader= "Contact List";
@@ -30,5 +33,9 @@ public class ContactListPage {
     }
 
 
-
+    @SneakyThrows
+    public void clickAddContactButton() {
+        Thread.sleep(5000);
+        addContactButton.click();
+    }
 }

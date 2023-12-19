@@ -21,6 +21,7 @@ public class LoginStep {
     @And("clicks submit button")
     public void clicksSubmitButton() {
         addUserPage.submitButton.click();
+
     }
 
     @Then("sees the Contact List page")
