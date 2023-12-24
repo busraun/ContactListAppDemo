@@ -11,4 +11,4 @@ Feature: Sign up
     Then see the Contact List header
     Examples:
       | firstName | lastName | email                 | password   |
-      | Hans      | Müller   | hansmueller@gmail.com | hansmuller |
+      | Hans      | Müller   | hansmueller98@gmail.com | hansmuller |
