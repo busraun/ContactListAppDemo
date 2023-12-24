@@ -30,17 +30,17 @@ from feature files or CukesRunner class
 
 ## Project Structure
 
-src/test/java/API_ContactList: Holds the API test scripts.
+1. src/test/java/API_ContactList: Holds the API test scripts.
 
-src/test/java/cukesRunner: Runs whole project.
+2. src/test/java/cukesRunner: Runs whole project.
 
-src/test/java/pages: Holds every single pages in the App.
+3. src/test/java/pages: Holds every single pages in the App.
 
-src/test/java/step_defs: Holds step definitions from the related feature file.
+4. src/test/java/step_defs: Holds step definitions from the related feature file.
 
-src/test/java/utilities: Holds Driver and TestDataGenerator classes.
+5. src/test/java/utilities: Holds Driver and TestDataGenerator classes.
 
-src/test/resources: Contains feature files for Cucumber BDD.
+6. src/test/resources: Contains feature files for Cucumber BDD.
 
 
 
