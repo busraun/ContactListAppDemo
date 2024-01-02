@@ -2,6 +2,7 @@ package API_ContactList;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.baseURI;
 
@@ -18,6 +19,7 @@ public class UpdateDataPATCH {
         String requestBody = "{\"phone\": \"35696376\"}";
 
 
+
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .body(requestBody)
@@ -27,5 +29,10 @@ public class UpdateDataPATCH {
                 .then()
                 .statusCode(200)
                 .log().all();
+
+
     }
+
+
+
 }
